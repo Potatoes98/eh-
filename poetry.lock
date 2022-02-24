@@ -1,0 +1,18 @@
+[[package]]
+name = "readkeys"
+version = "1.0.2"
+description = "Python library to read from stdin a single char, keypress (with escape sequences) or line."
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[metadata]
+lock-version = "1.1"
+python-versions = ">=3.8.0,<3.9"
+content-hash = "6ce7021b5dd3116dd0ae748287374c7dce1dfb6f3bd25ce0892a07173fb7969e"
+
+[metadata.files]
+readkeys = [
+    {file = "readkeys-1.0.2-py3-none-any.whl", hash = "sha256:2b113c4f0726df495ace2b031f174c17b77c576f014c347bb6d92d87d4f6a298"},
+    {file = "readkeys-1.0.2.tar.gz", hash = "sha256:0ea2a6a7e2993a454d53c90fbdcd7d526d12ade30c23049c1dc7398d1d7b32de"},
+]
