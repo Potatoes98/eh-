@@ -5,6 +5,12 @@ import random
 import time
 import readkeys
 from modules.util import *
+from replit import audio
+
+print("This is an audio test.")
+source = audio.play_tone(3, 440, 1)
+print("Press any key if you hear the three second tone. If not, reload and reset the repl by using 'kill 1' in the shell.")
+readkeys.getkey()
 
 typeReplace("Nobody will ever know why this exists...", 1)
 clear()
@@ -44,6 +50,8 @@ if not selection.isnumeric():
   extraText = ["Name: " + name, "Power Rating: " + power, "Attack: " + attack, "Health: " + health, "Energy: " + energy, "Stamina: " + stamina, "Defense: " + defense, "\nOptions: "]
 
   while True:
+    mainText = ["Attack", "Prepare", "Rest", "Check Enemy Stats"]
+    extraText = ["Name: " + name, "Power Rating: " + power, "Attack: " + attack, "Health: " + health, "Energy: " + energy, "Stamina: " + stamina, "Defense: " + defense, "\nOptions: "]
     clear()
     selection = createMenu(mainText, 0, 0, extraText, 0)
 

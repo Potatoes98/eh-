@@ -4,6 +4,7 @@ import sys
 import random
 import time
 import readkeys
+from replit import audio
 
 def clear():
   system("clear")
@@ -14,6 +15,7 @@ def typeOut(string, sleeptime=0):
     sys.stdout.write(l)
     sys.stdout.flush()
     time.sleep(random.uniform(0,0.7)*10.0/wpm)
+    source = audio.play_file("workingEh.wav")
   if sleeptime != 0:
     time.sleep(sleeptime)
 
@@ -79,8 +81,10 @@ def typeReplace(text, sleeptime=0):
     else:
       sys.stdout.write('\x1b[1A')
       sys.stdout.write('\x1b[2K')
+      
       # sys.stdout.write('\b \b')
       print(new)
+      source = audio.play_file("workingEh.wav")
     
     index += 1
 
